@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Verify lab-03.fprg exists
-        run: test -f labs/lab02/lab-02.fprg
+        run: test -f labs/lab02/lab-03.fprg
 
       - name: Set up Python
         uses: actions/setup-python@v4
