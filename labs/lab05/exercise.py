@@ -1,3 +1,25 @@
+# Import entire modules
+import math
+import random
+import datetime
+
+# Using imported modules
+circle_area = math.pi * (5 ** 2)
+random_number = random.randint(1, 100)
+current_date = datetime.date.today()
+
+# Import specific functions from modules
+from math import sqrt, pow, sin, cos
+from random import choice, shuffle
+from datetime import datetime, timedelta
+
+# Using imported functions directly (no module prefix needed)
+square_root = sqrt(25)
+power_result = pow(2, 8)
+random_choice = choice(['apple', 'banana', 'cherry'])
+
+# Different Code
+
 # Basic input and output
 print("Welcome to the Grade Calculator!")
 print("This program will calculate your course grade.")
