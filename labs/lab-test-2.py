@@ -14,5 +14,7 @@ print("Name: " ,name , "\t\t\t" "Matric. No: " ,matric_no, "\n\n")
 print("*\t\t\t*\n**\t\t**\n***\t***\n********\n***\t***\n**\t\t**\n*\t\t\t*\n\n")
 
 # Print text with data generated using arithmetic expression
-print('''This is my\n\tsecond\n\t\tassignment''')
+print('''This is my
+      \tsecond
+      \t\tassignment''')
 print("I want 2x10 marks, which is", full_mark,"full marks")
