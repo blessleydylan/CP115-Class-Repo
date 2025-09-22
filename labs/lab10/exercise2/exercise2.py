@@ -18,7 +18,6 @@ else:
 
 if accident_count == 0:
     discount_amount = base_premium * 0.1
-    final_premium = base_premium * discount_amount
 else:
     discount_amount = 0
 
