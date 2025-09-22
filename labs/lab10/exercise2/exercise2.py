@@ -12,7 +12,7 @@ else:
 if accident_count == 0:
     penalty_amount = 0
 elif accident_count <= 2:
-    discount_amount = 300
+    penalty_amount = 300
 else:
     penalty_amount = 600
 
