@@ -25,5 +25,5 @@ final_premium = base_premium + penalty_amount - discount_amount
 
 
 print(base_premium)
-print(final_premium)
+print(int(final_premium))
 print(discount_amount)
