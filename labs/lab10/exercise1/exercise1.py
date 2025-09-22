@@ -12,7 +12,7 @@ else:
 
 if is_weekend == "Yes":
     hourly_rate += 5
-overtime_pay = overtime_hours * (hourly_rate * 1.5)
+overtime_pay = (overtime_hours * hourly_rate * 1.5) + (overtime_hours * 5 if is_weekend == "Yes" else 0)
 total_pay = overtime_pay
 
 
