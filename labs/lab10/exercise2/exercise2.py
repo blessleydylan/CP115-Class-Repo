@@ -16,13 +16,13 @@ elif accident_count <= 2:
 else:
     penalty_amount = 600
 
-
+if accident_count == 0:
+    discount_amount = base_premium * 0.1
+    final_premium = base_premium * discount_amount
+else:
+    discount_amount = 0
 
 final_premium = base_premium + penalty_amount - discount_amount
-
-if accident_count == 0:
-    discount_amount = 0.90
-    final_premium = base_premium * discount_amount
 
 
 print(base_premium)
