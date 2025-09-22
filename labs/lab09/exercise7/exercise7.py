@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 peak_usage = float(input())
 off_peak_usage = float(input())
 ac_hours = int(input())
@@ -14,3 +15,14 @@ print(f"{total_cost:.2f}")
 print(recommendation_count)
 print(f"{efficiency_score}")
 print(savings_potential)
+=======
+student_gpa = float(input())
+total_score = int(input())
+number_extracurricular = input()
+completed_interview = input()
+
+# TODO: Your code here
+
+
+print(admission_status)
+>>>>>>> upstream/main
