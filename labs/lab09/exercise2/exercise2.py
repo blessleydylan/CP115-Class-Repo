@@ -11,7 +11,7 @@ gross_salary = base_salary + extra_payment
 is_status_valid = True
 
 # Determine the tax rate using nested conditions for better readability
-if tax_status == 'single':
+if tax_status == 'Single':
     if base_salary >= 5000:
         tax_rate = 0.22
     else:

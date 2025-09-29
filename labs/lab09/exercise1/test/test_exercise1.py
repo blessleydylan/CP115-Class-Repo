@@ -34,7 +34,7 @@ def run_exercise(exercise_path, inputs):
     (3.5, 12, "Honor Roll"),
     (2.0, 15, "Good Standing"),
 ])
-def test_student_classifications(exercise_path, gpa, credits, expected_classification):
+def test_student_classifications(exercise_path: str, gpa: float, credits: Literal[15] | Literal[14] | Literal[12], expected_classification: Literal['Dean\'s List'] | Literal['Honor Roll'] | Literal['Good Standing'] | Literal['Academic Probation']):
     """Test various student classifications"""
     inputs = f"Test Student\n{gpa}\n{credits}\n"
     output = run_exercise(exercise_path, inputs)
@@ -51,7 +51,7 @@ def test_student_classifications(exercise_path, gpa, credits, expected_classific
     (3.6, 8, "Good Standing"),   # Part-time honor roll GPA  
     (1.5, 6, "Academic Probation"),  # Part-time low GPA
 ])
-def test_part_time_students(exercise_path, gpa, credits, expected_classification):
+def test_part_time_students(exercise_path: str, gpa: float, credits: Literal[9] | Literal[8] | Literal[6], expected_classification: Literal['Good Standing'] | Literal['Academic Probation']):
     """Test that part-time students get correct classifications"""
     inputs = f"Test Student\n{gpa}\n{credits}\n"
     output = run_exercise(exercise_path, inputs)
