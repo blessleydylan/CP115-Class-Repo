@@ -13,5 +13,5 @@ for rounds in range(num_rounds):
     final_score += round_score
     rounds_processed += 1
 
-print(f"{final_score}")
+print(f"{round(final_score, 2):.1f}")
 print(rounds_processed)
