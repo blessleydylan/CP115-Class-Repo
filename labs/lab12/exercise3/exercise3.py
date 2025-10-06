@@ -1,5 +1,5 @@
 age_input = input()
-<<<<<<< HEAD
+
 age_count = 0
 total_age = 0
 average_age = 0
@@ -13,10 +13,6 @@ if (age_input != "done"):
             break
 
 average_age = total_age / age_count if age_count > 0 else 0
-=======
-
-# TODO: Your code here
->>>>>>> fc9de330b590a6cb6b41e6cee6b0e2b1d5c12774
 
 print(age_count)
 print(total_age)
