@@ -10,7 +10,7 @@ elif position == "Supervisor":
 else:
     hourly_rate = 18
 
-overtime_pay = (overtime_hours * hourly_rate * 1.5) + (overtime_hours * 5 if is_weekend == "Yes" else 0)
+overtime_pay = (overtime_hours * hourly_rate * 1.5) + (overtime_hours * 6 if is_weekend == "Yes" else 0)
 total_pay = overtime_pay
 
 
