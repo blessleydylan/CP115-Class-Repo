@@ -1,4 +1,5 @@
 score = float(input())
+<<<<<<< HEAD
 average_score = 0
 score_count = 0
 total_score = 0
@@ -18,4 +19,12 @@ else:
 
 print(score_count)
 print(f"{total_score:.1f}")
+=======
+
+# TODO: Your code here
+
+
+print(score_count)
+print(total_score)
+>>>>>>> fc9de330b590a6cb6b41e6cee6b0e2b1d5c12774
 print(f"{average_score:.2f}")
