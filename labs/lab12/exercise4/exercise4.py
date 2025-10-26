@@ -22,6 +22,7 @@ pass_rate = (passing_count / (passing_count + failing_count) * 100) if (passing_
 
 
 
+
 print(passing_count)
 print(failing_count)
 print(f"{pass_rate:.2f}")
