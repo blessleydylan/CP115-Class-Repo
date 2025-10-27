@@ -1,50 +1,35 @@
-weight = float(input())
-height = float(input())
-systolic_bp = int(input())
-diastolic_bp = int(input())
-heart_rate = int(input())
-cholesterol = int(input())
-age = int(input())
-is_smoker = input()
-exercise_hours = int(input())
-family_history = input()
-risk_score = 0
-warning_count = 0
+main_course = input()
+drink = input()
+dessert = input()
+customer_age = int(input())
 
 # TODO: Your code here
-bmi = weight / (height ** 2)
-if systolic_bp < 140 or diastolic_bp < 90:
-    warning_count += 1 
-else:
-    warning_count = risk_score
-if heart_rate < 60 or heart_rate > 100:
-    warning_count += 1  
-else:
-    warning_count = warning_count
-if cholesterol > 200:
-    warning_count += 1
-else:
-    warning_count = warning_count
-if age > 50:
-    warning_count += 1 
-else:
-    warning_count = warning_count
-if is_smoker == "yes":
-    risk_score += 20 
-else:
-    risk_score = risk_score
-if exercise_hours < 3:
-    risk_score += 15
-else:
-    risk_score = risk_score
-if family_history == "yes":
-    risk_score += 10 
-else:
-    risk_score = risk_score
+if main_course == "Chicken":    
+    main_course_price = 10.0
+elif main_course == "Beef":   
+    main_course_price = 12.0
+elif main_course == "Fish":    
+    main_course_price = 11.0
 
+if drink == "Soft Drink":    
+    drink_price = 2.0
+elif drink == "Coffee":    
+    drink_price = 3.0
 
+if dessert == "Ice Cream":    
+    dessert_price = 4.0 
+elif dessert == "Cake":
+    dessert_price = 5.0
 
-print(f"{bmi:.1f}")
-print(warning_count)
-print(f"{risk_score}")
-print(priority_level)
+base_bill = main_course_price + drink_price + dessert_price
+service_charge = base_bill * 0.10
+total_bill = base_bill + service_charge
+
+if customer_age >= 60:
+    final_bill = total_bill * 0.85  # 15% discount for seniors
+elif customer_age <= 18:
+    final_bill = total_bill * 0.90  # 10% discount for students
+else:
+    final_bill = total_bill  # No discount
+
+print(f"{final_bill:.2f}")

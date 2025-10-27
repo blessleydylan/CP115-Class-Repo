@@ -1,15 +1,24 @@
-guest_count = int(input())
-day_type = input()
-event_time = int(input())
-catering_upgrade = input()
-av_equipment = input()
-venue_parking = input()
-alcohol_served = input()
-event_location = input()
+position = input()
+overtime_hours = int(input())
+is_weekend = input()
 
 # TODO: Your code here
+if position == "Manager":
+    base_rate = 30
+elif position == "Supervisor":
+    base_rate = 20  
+elif position == "Staff":
+    base_rate = 15
+else:  # Intern
+    base_rate = 8
 
-print(f"{base_cost:.2f}")
-print(additional_fees)
-print(f"{total_cost:.2f}")
-print(cost_per_person)
+if overtime_hours <= 8:
+    overtime_pay = overtime_hours * base_rate * 1.5
+else:
+    overtime_pay = (8 * base_rate * 1.5) + ((overtime_hours - 8) * base_rate * 2.0)
+
+if is_weekend == "Yes":
+    overtime_pay += overtime_hours * 5  # RM5/hour weekend bonus
+
+
+print(overtime_pay)
