@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-6"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 11:54:43 AM"/>
+        <attribute name="created" value="VXNlcjtMQVBUT1A7MjAyNS0wNy0yMTsxMTo0NTowOCBBTTsyMTQ2"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1A7MjAyNS0wNy0yMTsxMTo1NDo0MyBBTTsxOzIyNTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LengthOfOuterHouse" type="Real" array="False" size=""/>
+            <input variable="LengthOFOuterHouse"/>
+            <declare name="WidthOfOuterHouse" type="Real" array="False" size=""/>
+            <input variable="WidthOfOuterHouse"/>
+            <declare name="LengthOfBuiltInHouse" type="Real" array="False" size=""/>
+            <input variable="LengthOfBuiltInHouse"/>
+            <declare name="WidthOfBuiltInHouse" type="Real" array="False" size=""/>
+            <input variable="WidthOfBuiltInHouse"/>
+            <declare name="HouseArea" type="Real" array="False" size=""/>
+            <assign variable="HouseArea" expression="LengthOfOuterHouse * WidthOfOuterHouse"/>
+            <declare name="BuiltInHouseArea" type="Real" array="False" size=""/>
+            <assign variable="BuiltInHouseArea" expression="LengthOfBuiltInHouse * WidthOfBuiltInHouse"/>
+            <declare name="AreaMowed" type="Real" array="False" size=""/>
+            <assign variable="AreaMowed" expression="HouseArea - BuiltInHouseArea"/>
+            <declare name="MowingWage" type="Integer" array="False" size=""/>
+            <assign variable="MowingWage" expression="AreaMowed * 2"/>
+            <output expression="MowingWage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
