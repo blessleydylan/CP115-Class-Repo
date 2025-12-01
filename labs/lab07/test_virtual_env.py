@@ -1,6 +1,6 @@
 
-student_name = "Your Name"
-student_id = "Your ID"
+student_name = "Blessley Dylan"
+student_id = "MC2515113659"
 course_code = "CP115"
 
 print(student_name)
